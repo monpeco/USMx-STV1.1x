@@ -81,4 +81,91 @@ Stecklein, J. et al. (2004). “Error Cost Escalation Through the Project Life C
 
 NIST report, (2002). “The Economic Impacts of Inadequate Infrastructure for Software Testing”, retrieved from https://www.nist.gov/document-17633
 
+---
+
+#### What is a Test Case
+
+A test case is a set of conditions and criteria that specify how a tester will determine if the system does what it is expected to do. While the specifics of a test case will differ based on the level and scope of the testing activity (to be covered in more detail next week) there are some common components that each test will have.
+
+A single test case will test a single behavior of a system while a suite of test cases together will test a test scenario and/or higher scope functionality of a component or multiple components. For example, I might have the following: 
+
+Test Scenario: Verify the ATM system withdrawal functionality (checking account) 
+
+Test Case 1: Enter 0 for the amount to withdraw
+
+Test Case 2: Enter amount greater than what is currently in the account
+
+Test Case 3: Enter amount that is less than what is currently in the account with enough; left to pay ATM withdrawal fee
+
+Test Case 4: Enter amount that is less than what is currently in the account but not enough left to pay ATM withdrawal fee
+
+Test Case 5: Enter amount that is exactly what is currently in the account
+
+As you case see by this example, the scenario is defining a particular end-to-end functionality of the system (what should be tested) while test cases test a specific behavior related to that functionality (how it should be tested). Together the test cases should test all aspects of that functionality to make sure it works under all conditions that can happen.
+
+The tests are usually defined in a document called Test Plan which spells out all the details of the testing to be done, schedules and milestones, responsibilities, testing systems and installation and setup, and the list of test cases to be executed.
+
+Test cases can be manual where a tester follows conditions and steps by hand or automated where a test is written as a program to run against the system. Usually both types of tests exist and are done for a particular system. Regardless if manual or automated however, tests are usually first defined in a document and often have to be approved by developers and/or testers. Automated tests may have all the documentation in the code implementing the test case and in the comments. 
+
+---
+
+#### Format and Fields for a Test Case
+
+There is no single format used by everyone for test cases. A lot depends on the level of the test (e.g. functional test versus usability test), the type of product/system being tested, and the team and/or organization’s standard practices.  Some typical formats and storage of test cases include: spreadsheet, document table, database, and code/test repository records.
+
+There is however, common information that all tests will have as they are defined and if the document serves as the test execution record, then also the fields for keeping the results. The fields are as follows: 
+
+**Unique Test Case name and/or ID**: Each test case needs an identifier to refer back to it in a report or defect and if automated to map it to the implementation code. Some tests will have both an id and a meaningful name which is derived from the requirement or the functionality being tested.
+
+**Test Scenario and test summary or description**: This description should specify what behavior/functionality will be tested by this test case. It should be specific but brief.
+
+**Pre-requisites or setup**: What needs to be setup first, such as previous input or commands to the system to execute this test case.
+
+**Test data or inputs**: Data to be used for this test case such as values of what is typed in or what is loaded from a file.
+
+**Execution Steps**: The steps that have to be done against the system to test the behavior for this test case. The steps should be detailed, accurate, and correct. Another tester reading the test case should be able to follow the steps without needing to analyze requirements or design documents.
+
+**Expected behavior**: This is the description of what is expected to happen and the final result of following the above steps.
+
+**Assumptions**: Any assumptions that are made about the system or the test case. For example, data dependency or other test case dependency.
+
+**Actual results**: Description of what actually happened when the test case was run and what were the outcomes relative to what was expected.
+
+**Status**: What is the current status of the test case such as passed, failed, or not tested.
+
+---
+
+#### Characteristics of a Good Test Case
+
+So how can you develop good test cases? There are a number of guidelines or best practices in writing efficient test cases. If you practice these characteristics, you will be able to write good and efficient test cases.
+
+#### 1. Only test one thing in a test case
+Your test case should not be complicated and it should only test a single condition or value. It should be as “atomic” as possible and it should not overlap other test cases either. In this way when a test case fails, it will be easier to track what exactly failed, what was the actual result, and it will give an accurate view of how many have been found.
+
+#### 2. Test case should have an exact and accurate purpose
+So not only should it test just a single thing but that single thing should be specific and clearly stated. There should be no confusion what the test is supposed to be checking and what the expected behavior and result should be. The test case should be accurate on what it tests and it should test what it is intended to test.
+
+#### 3. Test case should be written in a clear and easy to understand language
+This applies to both the test definition in the documentation and in the actual code. Just like the test definition should be clear, the code that implements it should be straight forward and clear. Any developer or tester should be able to understand exactly what the test case is trying to do by reading it once.
+
+#### 4. Test Case Should be Relatively Small
+If your test case is following the rule for only testing a single thing, it should not be large. If you find yourself writing a long test case, then chances are you are trying to test too much. In that case you need to break it down into multiple test cases. Long test cases get too complicated and that in turn leads to mistakes in the definition, implementation or execution.
+
+#### 5. Test case should be independent
+You should be able to execute the test cases in any order and independently of other test cases. This makes the test case simpler as it is self-sufficient and there is no reason to track or worry about any other test cases. It also allows the tester or developer to use the test case for retesting as needed and to test a subset of tests while waiting for some component to be completed or fixed.
+
+#### 6. Test case should not have unnecessary steps or words
+This rule goes along with the test case being clear and short. The test case should be precise and economical and only have what it needs to have to describe what it is testing and how it should be tested. It should not be cluttered with any unnecessary and confusing verbiage.
+
+#### 7. Test case should be traceable to requirements or design
+The test case needs to test some behavior or characteristic that the code is supposed to have. A tester does not make up how the code should act. So that means that there is an explicit requirement from the user or product owner, explicit organization requirement (e.g. serviceability for every product), or implicit requirement derived from some explicit requirement that the test case can be traced to.
+
+#### 8. Test case should be repeatable
+This rule goes along with being independent. The test cases should be able to be re-run anytime and in any order. This allows for regression testing, re-runs for fixes, and continuous integration where tests are run every time changed code is integrated into the product.
+
+##### 9. Test case should use consistent terminology and identification of functionality
+This rule goes along with clear definition. When naming or identifying a feature, functionality, or widget, there should be the same and consistent terminology within the test case and across test cases. So for example, if test cases are describing the tests for login page for a college class, they should not have “user”, “person”, and “student” to refer to the same identity.  One of these should be picked and used consistently across.
+
+---
+
 
