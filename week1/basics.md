@@ -169,3 +169,41 @@ This rule goes along with clear definition. When naming or identifying a feature
 ---
 
 
+#### Test Case Exercise
+
+Let’s say we are to test a login functionality that was designed to look like below:
+
+![testCase](https://prod-edxapp.edx-cdn.org/assets/courseware/v1/a0ff4d597c3c9d64f3812670bee7327f/asset-v1:USMx+STV1.1x+3T2018+type@asset+block/signonscreen.png)
+
+So we have a username and a password fields. The username is a valid email address and no longer than max valid email address and the password has to be at least 8 characters and no more than 12 characters with only letters and numbers allowed.  Once both registered username and password are entered and Login button clicked, the welcome page will be displayed.
+
+The design indicates that if either username or password is incorrect, we should get the following message above the login area above and the username and password fields should be cleared:
+
+![testCase](https://prod-edxapp.edx-cdn.org/assets/courseware/v1/0555257e0ac8221ace403a6c1f5d9004/asset-v1:USMx+STV1.1x+3T2018+type@asset+block/unit1_error_message.png)
+
+So we define our Test Scenario and Test Cases as follow:
+
+Test Scenario: Verify the login functionality
+
+* Test Case 1: Click on Login without typing in username or password
+
+* Test Case 2: Type in correct username and nothing for password
+
+* Test Case 3: Type in correct password and nothing for username
+
+* Test Case 4: Type in incorrect username and incorrect password
+
+* Test Case 5: Type in correct username and incorrect password
+
+* Test Case 6: Type in incorrect username and correct password
+
+* Test Case 7: Type in correct username and correct password
+
+Note: This is not a complete set of possible test cases. You could also test variations on bad username and password to make sure that the system behaves correctly for them as well. For example a username that is not correctly formatted email address; username greater than max size for email address; password less than 8 characters; password greater than 12 characters; password that has characters that are not letters or numbers; etc.
+
+Your Test Case 1 would then be defined something like:
+
+
+---
+
+
