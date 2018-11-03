@@ -200,3 +200,50 @@ o   Uninitialized variables
 
 ---
 
+#### Coverage Testing - Model Based Coverages
+
+Model-Driven Test Design (MDTD) uses a model of the system to derive test cases using different coverage techniques. This approach lets a single test designer do the math to generate the test cases while traditional testers and programmers can do the typical test activities such as:
+
+Find values
+Automate the tests
+Run the tests
+Evaluate the tests
+In MDT you define a model of the software and then find ways to cover it (test coverage) considering test requirements (RT) and test criterion (TC). Test Requirements define the specific things that must be satisfied or covered during the testing and test criterion is a collection of rules and a process that define test requirements. There are four basic ways to model a system: graphs, logical expressions, input domain characteristic, and syntactic structure.
+
+##### Covering graphs:
+
+Graphs can come from many sources such as control flow graphs, design structure, finite state machine (FSMs) and statecharts, and use cases. Using graphs you can represent the system structurally, its data flow (variable definition and use), and its control flow (if-statement, case statement, while loop, etc.). In fact, in order to test code coverage using path coverage, graphs are often used to determine the test coverage.
+
+Tests usually are intended to “cover” the graph in some way so for example one may:
+
+Cover all reachable nodes or paths
+Cover all edge-pair
+Cover all definition and use pairs
+Covering Logic Expressions
+
+Logic expressions show up in many situations and in fact, covering logic expressions is required by the US Federal Aviation Administration for safety critical software. Just like graphs, logical expressions can come from many sources to include decisions in programs, FSMs and statecharts, and requirements. Tests are intended to choose some subset of the total number of truth assignments to the expressions and cover predicates and clauses which evaluate to true or false. Testing all combinations (truth table for expression) is not possible for large and complicated expressions so different coverage criteria are used to test adequately but efficiently.
+
+So for example, we may want to reach 100% clause coverage in the code. That means we would test each clause in the condition for True and False combination. So for example if we had the following condition   if (b < 5 || b > 10)  we would want to have one test when the first clause (b < 5) is True and then another test where it is False and then the same for clause (b > 10).
+
+So let’s look at some test data for this example. To make the first clause True we could run the test where b=4. Then for the second clause True we could have b=11. So that is simple. But now for the false evaluation it is more interesting. If we make b any number between 5 and 10 inclusively such as b=6 then my first clause is false and my second clause is false as well. In fact, there is no data that can be used for b where one clause is false and the other is true. So I only need three test cases to meet the clause coverage for this particular condition. What that means is that when selecting data for the tests to reach certain criteria, you do not just blindly select data for each T/F combination for the clause. If you do, you may end up with many redundant tests that add nothing to the coverage or testing effort. And that is a waste of time in developing these redundant tests and running them and so ultimately it increasing the cost unnecessarily.
+
+##### Covering Input Domains
+
+The input domain to a program contains all the possible inputs to that program. For even small programs, the input domain is so large that it might as well be infinite. This is the same thing as trying to reach 100% data coverage. So testing is fundamentally about choosing finite sets of values from the input domain.
+
+Input parameters define the scope of the input domain and they include parameters to a method, data read from a file, global variables, and user level inputs. Domain for each input parameter is partitioned into regions and at least one value is chosen from each region.
+
+There are two approaches to Input Domain Modeling: Interface-based approach and Functionality-based approach. In interface-based approach you can develop characteristics directly from individual input parameters. This makes it simple to apply and can be partially automated in some situations. In functionality-based approach you develop characteristics from a behavioral view of the program under test. So that makes it harder to develop and requires more design effort. However, it may result in better tests or fewer tests that are as effective.
+
+Using the Syntax to Generate Tests
+
+Lots of software artifacts follow strict syntax rules and the syntax is often expressed as a grammar in a language such as BNF. Syntactic descriptions can come from many sources to include:
+
+##### Programs
+Integration elements
+Design documents
+Input descriptions
+Then tests are created with two general goals: to cover the syntax in some way and to violate the syntax (invalid tests).
+
+---
+
