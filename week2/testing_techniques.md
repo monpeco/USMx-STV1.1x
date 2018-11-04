@@ -373,3 +373,11 @@ V
 
 ---
 
+#### Concluding Remarks
+
+We have covered a lot of material this week.  As you can see there are many different of types of testing and test cases.  So, the question naturally arises, what types of testing and test case should be used?  Are some better than others? Luckily for us a lot of research has gone into answering these questions. Research shows that in most cases using a variety of test types with the testing resources that you have produces the best results. 
+
+Next week we are going to look at how you can develop a unit test and automate the execution of it.  So, once you develop a test suite you can execute is as many times as you want to without retyping all of the values in.
+
+
+
