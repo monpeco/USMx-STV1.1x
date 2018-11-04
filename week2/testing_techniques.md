@@ -300,3 +300,76 @@ Thus together, our two test cases achieve 100% code coverage for this method and
 
 ---
 
+#### Functional (Component) Test
+
+Unlike unit test where you are testing small pieces of code (methods or functions) individually, for function test you want to test the whole program. You conduct function test by running the program and providing it different inputs to test different functionality and scenarios and to check that the outputs match the user requirements and the system design.
+
+Some of the test may be similar as far as the functionality as the unit test but you are driving the test through the whole program path and not directly through the method/function as you did in unit test. Therefore function test is usually a black-box test where you are only concerned with inputs and outputs and not how the functionality was implemented internally.
+
+Function tests can also be automated and in fact should be automated as much as possible but the frameworks are much more complex than what is used in unit test.  So what should you test in Function Test? When you define function tests, you need to test all inputs to the programs and all the features and functionality. For example if I was testing Microsoft Word application, I would need to design function tests for:
+
+* Opening a blank file, all types of files that are allowed, and types that are not allowed
+* Test every pull down menu and every option in that menu
+* Test every option of every feature
+* Test saving the file and all options of it
+* Test having multiple files open
+* Test exiting with unsaved changed and saved changes
+* Test help options
+
+And this is just a start. Obviously Word has tons of features.
+Let’s look at another example of defining function test cases. Most of you are familiar with Microsoft Calculator application, which is a much smaller application than Microsoft Word. So it’s not so much to test right? Well let’s see…
+
+This image is the basic Microsoft Calculator application.
+
+First you would need to test every menu option:
+
+·         At least one test case per every option in View
+
+·         At least one test case per every option in Edit
+
+·         At least one test case per every option in Help
+
+Then you would want to test all operations:
+
+·         Addition
+
+·         Subtraction
+
+·         Division
+
+·         Multiplication
+
+·         Percentage
+
+·         Fraction
+
+·         All the M functions
+
+·         Etc.
+
+Then you would want to create more complicated test cases by using multiple operations together for different features. Most likely you would get a list of complicated formulas and make sure that the calculator gives the correct answer. And lastly you would test all the boundary and limits of what the calculator is supposed to handle such as highest number than can be typed in or calculated. Not so simple application after all!
+
+Your actual function test case may look something like this:
+
+> Test Case: AddFunction-R1.3
+V
+> Requirements:   R1.3 Add two positive numbers
+> 
+> Prerequisites:  None
+> 
+> Steps: 
+> 
+> Start calculator program
+> Check that display has 0
+> Click button with number 1 and check that displays shows 1
+> Click button with add sign and check that displays shows above 1 the current operation “1 +”
+> Click button with number 2 and check that displays now shows 2
+> Click button with equals sign and check that the display now shows 3
+> Input:  1 + 2
+> 
+> Expected output: display show the result of addition as 3
+> 
+> Assumptions: None
+
+---
+
