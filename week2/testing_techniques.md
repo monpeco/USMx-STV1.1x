@@ -247,3 +247,56 @@ Then tests are created with two general goals: to cover the syntax in some way a
 
 ---
 
+#### Unit Test (UT)
+
+Unit testing is done during the implementation (ie coding) phase either at the same time the code is developed or if using test-driven development (TDD) before the implementation starts. In either case tests are defined and written to test the smallest unit of code usually a function, method or class. Each unit is tested independently and the tests together form a suite of tests that can be used for regression testing as the code is changed or added to.
+
+Typically UT is done by the developer writing the code but in agile development approach, developer/tester may work in pairs. The goal of unit test is to find code errors (defects) and to make sure that the units meet requirements and designs. Since the tester has access to the code and in fact is defining tests based on how the code is written, UT is white-box testing technique.
+
+The testing criteria used for unit test are usually to reach 100% code coverage and reasonable data coverage. Depending on the size of the software you may not be able to test everything but typically if done concurrently while implementing and if automating the test cases, it is often done.
+
+Unit tests are typically very small and independent and they run quickly and assert the behavior of a particular functionality or an object. They also help in designing and refactoring complex code as they force programmers to break down the logic of their application in to manageable chunks (units).
+
+So what would be a unit type of test? For example you could have a method that sums two numbers together and it might be tested by checking that when first number holding value 1 is added to second number holding value 2 returns the addition result of 3. While this might sound like a trivial test, unit tests are useful for debugging code and especially for complex code that changes frequently. A developer may make a change that they think does not affect the output of a method, but a well written unit test will prove that in fact the change they made has not broken anything.
+
+Imagine having 10 classes with on average 20 methods in each. Each method may have branches with different code executing depending on the input provided. Now imagine you had to make a change in the code across 3 classes that impact a number of other classes that call the methods you have changed. So how can you be reasonably sure that what you have changed does not break other code? You make a reasonable analysis of the code and its design before you make changes. However, the more code you have to look at, the greater the chances that you may miss something. That is where good automated unit test cases really help. Once you make your changes, you run all the unit tests for that whole component where you made the change. If something fails you will know you have an issue with your change. If nothing fails you may still have an error but if your unit test suite is thorough, you can have a much higher confidence level that your change did not break anything and especially something obvious. There is nothing worse than fixing a relatively small error and introducing another error.
+
+Let’s look at an example of defining unit test cases for statement code coverage. Below we have a method written in Java code called computeSalesTotal that takes two parameters: the total sales of a purchase and a sales tax rate. The method takes two parameters of type integer and if the value of the parameter is less than 0, it is supposed to throw an exception. Otherwise it should print a value of the parameter. The numbers on the left are not part of the code but line numbers to help discuss the coverage.
+
+```java
+1  public void computeSalesTotal(float totalSales, float salesTaxRate)
+2  { 
+3        if (salesTaxRate < 0.0)
+4        {
+5             System.out.println("Invalid sales tax rate");
+6        } else {
+7             System.out.println("Total including sale tax is " + totalSale * (1.0 + salesTaxRate)); 
+8       }
+```
+
+The method has 8 lines of code but there are only 3 executable statements in this code on lines 3, 5, and 7. Those are the lines we need to concentrate on to reach 100% statement coverage. So how many tests do you think you need? The answer is 2. You need a test where the sales tax rate is invalid and then a test where the sales tax is valid (0 or positive value).
+
+The tests may be defined as follows:
+
+> Test Case 1
+Test case name:  testSalesTotalPositiveArg
+Method being tested:   computeSalesTotal(float totalSales, float salesTaxRate)
+Short Description:  Test that when salesTaxRate has positive value, it prints that total value to the console
+Input Data to constructor and/or method you are testing:  totalSales = 89.0, salesTaxRate = 0.06
+Expected Results:  "Total including sale tax is 94.34" is printed to the console
+
+> Test Case 2
+Test case name:  testSalesTotalNegativeArg
+Method being tested:   computeSalesTotal(float totalSales, float salesTaxRate)
+Short Description:  Test that when salesTaxRate has negative value
+Input Data to constructor and/or method you are testing:  totalSales = 10.0, salesTaxRate = -0.2
+Expected Results:  Prints message “Invalid sales tax rate”
+
+ So our first test case calls the computeSalesTotal passing it 89.0 and 0.06 as parameters.  So the local variables totalSales gets the value of 89 and salesTaxRate gets the value of 0.06 through parameters in line number 1.  Then it executes line number 3 where the condition (salesTaxRate < 0.0) is evaluated to false. So it skips line numbers 4 and 5 and executes the print statement on line number 7 and the method ends. So this test case tests line numbers 3 and 7.
+
+Our second test case calls the computeSalesTotal passing it 10 for totalSales and -0.2 for salesTaxRate as parameters.  So the local variables totalSales gets the value of 10  and salesTaxRate gets the value of -0.2 in line number 1. Then it executes line number 3 where the condition (salesTaxRate < 0.0) is evaluated to true. So it executes the print statement in line number 5 and skips the rest of the lines. This test case tests line numbers 3 and 5.
+
+Thus together, our two test cases achieve 100% code coverage for this method and test lines numbers 3, 5, and 7.
+
+---
+
