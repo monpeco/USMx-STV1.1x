@@ -46,6 +46,7 @@ test cases for the next functionality. The developer then picks up the new test 
 integrates the next part of the product. Again though, in order to allow this re-running of tests there 
 have to be automated tests.
 
+---
 
 #### Cost Involved with Automation
 
@@ -75,6 +76,28 @@ test cases, as fixes are integrated and new or changed functionality is added. I
 to constantly have to change the test cases because once again that cost may negate the benefit of 
 automation.
 
+
+---
+
+#### What to Automate
+
+Not everything can be automated. Some products or programming languages do not have a framework for automation and so writing the framework first may be too costly. Some systems or features of a system may change so often that, as mentioned in previous section, the cost of updating the tests would negate the cost of having automation in the first place.
+
+And in some cases, especially when testing a web interface, one has to deal with network and internet speed where the test would have to built-in delays not to fail unnecessarily, in which case the automated tests may actually take longer than doing the tests manually.
+
+So how do you determine if you should automate something? There are certain tasks, tests, and situation where automation is the most beneficial. These include:
+
+·         Unit test cases which are easily coded and easily executed within a testing framework
+
+·         Repetitive tests that need to be conducted often such as for every new driver build (used as regression testing)
+
+·         Tests which are tedious and/or prone to human error such as checking numbers or other detailed data (e.g. decimal point to 10 digits)
+
+·         Tests that have to be run many times but with different data or on different hardware/software
+
+·         Tests that cannot be done manually such as simulating 100 concurrent users on the system or input of 500 pieces of data
+
+·         Tests that would take a lot of time and effort to do manually but can be automated and re-run easier
 
 ---
 
