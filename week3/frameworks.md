@@ -189,3 +189,38 @@ In this week we are concentrating on automating JUnit tests but JUnit is not the
 
 ·         Perl  - PerlUnitis open source framework but it has not been updated for a long time
 
+---
+
+#### Additional Resources
+
+* http://java.dzone.com/articles/junit-tutorial-beginners  
+
+* http://junit.org/junit4/index.html
+
+* http://junit.org/junit5/index.html
+
+---
+
+#### Video: Tutorial Class
+
+
+https://youtu.be/pKzRxqxSIXM
+
+
+
+---
+
+#### Video: Tutorial Code Coverage
+
+https://youtu.be/qk3GgbEwaTM
+
+https://youtu.be/SVRQC9IW9aw
+
+https://youtu.be/-Ocvkbm_a6E
+
+---
+
+#### Video: Tutorial Data Coverage
+
+
+https://youtu.be/3zPphDoAmeY
