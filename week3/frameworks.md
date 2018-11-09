@@ -101,3 +101,91 @@ So how do you determine if you should automate something? There are certain task
 
 ---
 
+#### JUnit
+
+JUnit as the name implies is automation testing framework for unit test and for Java programming language. However, the framework can also be used for function tests where the testing is driven through the main method.  JUnit requires that you have the JDK installed on your computer and while it can be downloaded and run directly using Java from command line, it is also included in many common Integrated Development Environment (IDE) products such as Eclipse and NetBeans.
+
+When you want to test a particular method in your Java code, you would create a Java class usually named TestX or XTest where X is the name of the class you are testing. Then you would have a number of test methods to check specific behaviors of the method given different inputs.
+
+So let’s say we have a class called Example and it has a method with a single parameter where if the value passed is 0 it returns a String “invalid” and otherwise it returns “valid”. The Java code would be:
+
+
+```java
+public String checkValidity(int num)
+{
+    if (num == 0)
+        return "invalid";
+    else
+        return "valid";
+}
+
+```
+
+So our first automated test method may want to check that when checkValidity method gets a 0 it does in fact return the string “invalid”.  So we need to create an instance of the class Example, invoke its method checkValidity, and then compare if what the method returned is “invalid” as we expect. The code would look like this:
+
+
+```java
+import static org.junit.Assert.*;
+import org.junit.Test;
+
+public class TestExample {
+    @Test
+    public void testCheckValidityInvalid() {
+        Example ex = new Example();    // creates an instance of class Example
+        String result = ex.checkValidity(0);    // calls checkValidity with value 0
+                                                // and saves returned value in String result
+        assertEquals("invalid", result);    // checks that result has the value "invalid"
+    }
+}
+```
+
+Notice that to check that the values are the same, we use the JUnit’s assertEquals method and that is why we need the two imports on top. The assertEquals method compares the two values in its parameters and if they are the same, the test case passes. If they are different, the test case fails. 
+
+I would also get a message of why the test case failed. So if for example the return value in checkValidity was “not valid” and it was supposed to be “invalid”.
+
+So assertEquals tells me what was expected versus what is there based on the parameters we passed in our test case.
+
+The JUnit comes with many different assertions that can be used. All of the assertion methods evaluate to either true or false based on what the assert is supposed to do and what parameter values are passed. When the assertion evaluates to true, the test case passes and when it evaluates to false, it fails. The failures are recorded. These assert methods allow for testing assumptions that are made by the test case on how the code is supposed to behave and to generate a report of passes and failures.  In addition to assertEquals, other commonly used asserts include:
+
+* assertNotNull - Asserts that an object isn't null
+* assertNull - Asserts that an object is null
+* assertSame - Asserts that two objects refer to the same object
+* assertNotSame - Asserts that two objects do not refer to the same object
+* assertTrue - Asserts that a condition is true
+* assertFalse - Asserts that a condition is false
+
+Assert methods usually allow a message as the first parameter that is recorded when the test fails and it allows the tester to provide more information about the failure. For example:
+
+assertSame("The variables should point to the same object", ex, ex2);  
+
+would have assertion error:   
+
+“The variables should point to the same object expected same:<Example@1010be6> was not:<Example@5f4c2e>”
+
+The list of assertions along with the descriptions can be found at:
+
+http://junit.sourceforge.net/javadoc/org/junit/Assert.html
+
+The naming convention for test methods is to start with “test” and then have meaningful descriptive words to indicate what the test is testing. Notice how my test above is called “testCheckValidityInvalid”. So you know it is a test case “test”, it is testing method “checkValidity”, and it is testing for the value “invalid”.  In addition to the meaningful name you should also have good comments describing what the test is checking and comments in the test method on what some of the key statements are doing. This way when you or someone else looks at the test case later, there is no confusion what the test is doing and why.
+
+The last thing to remember is that your test cases especially for unit test should be straight forward, well-documented, and only test a single input or condition and so only have a single assert per test method. If you have multiple asserts and the first one fails, the test fails and the remaining asserts are not executed. As a result you may have a misleading view of how many defects there actually are in the source code.
+
+Note: Check out the Tutorial code examples and videos that walk you through writing the tests.
+
+
+
+---
+
+#### Other Testing Frameworks
+
+
+In this week we are concentrating on automating JUnit tests but JUnit is not the only framework for testing automation. There are many different testing frameworks and unit testing frameworks in particular for different languages. For example:
+
+·         Python – PYUnit is based on Java’s JUnit framework so it has the similar look and feel to it
+
+·         C# - NUnit is open source framework for all .NET languages. Originally it was ported from JUnit but was then re-written
+
+·         JavaScript – QUnit is a stand-alone framework that can test any JavaScript code
+
+·         Perl  - PerlUnitis open source framework but it has not been updated for a long time
+
