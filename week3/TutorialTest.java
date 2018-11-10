@@ -29,4 +29,45 @@ public class TutorialTest {
         }
 
     }
+    
+    @Test
+    public void testSecondContructorAttrStrNull(){
+        try{
+
+            new Tutorial(2,"");
+            fail("Should have throw an exception when the second parameter is null or blank");
+
+        } catch (IllegalArgumentException e){
+
+            assertEquals("Second parameter cannot be neither null or empty string", e.getLocalizedMessage());
+
+        } catch (Exception e2){
+
+            fail("Exception throw but is not IllegalArgumentException as expected");
+
+        }
+
+    }
+    
+    @Test
+    public void testConcatLoopMax(){
+
+        Tutorial tutorial = new Tutorial(5, "va");
+        assertEquals("va va va va va ", tutorial.concatLoop());
+
+    }
+    
+    @Test
+    public void testConcatLoopAttInt(){
+        Tutorial tutorial = new Tutorial(2, "num");
+        tutorial.concatLoop();
+        assertEquals(2, tutorial.getAttInt());
+    }
+    
+    @Test
+    public void testConcatLoopAttStr(){
+        Tutorial tutorial = new Tutorial(2, "num");
+        tutorial.concatLoop();
+        assertEquals("num", tutorial.getAttStr());
+    }
 }
