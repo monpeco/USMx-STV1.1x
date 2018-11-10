@@ -35,10 +35,11 @@ public class Tutorial {
 
     public String concatLoop(){
         String result = "";
+        int index = attInt;
 
-        while(attInt > 0){
+        while(index > 0){
             result = result + attStr + " ";
-            attInt = attInt - 1;
+            index = index - 1;
         }
 
         return result;
