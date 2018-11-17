@@ -224,3 +224,18 @@ https://youtu.be/-Ocvkbm_a6E
 
 
 https://youtu.be/3zPphDoAmeY
+
+https://youtu.be/SVRQC9IW9aw
+
+---
+
+#### Video: Tutorial Data Coverage
+
+https://youtu.be/-Ocvkbm_a6E
+
+https://youtu.be/YNlbrU-v5Tw
+
+---
+
+#### Exercise Instructions
+
