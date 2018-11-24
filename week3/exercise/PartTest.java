@@ -65,4 +65,10 @@ public class PartTest {
         Part part = new Part('E', number, 50);
         assertEquals(part.getNumber(), number);
     }
+    @Test
+    public void testGetPriceInvalid(){
+        int price = 200;
+        Part part = new Part('E', 20000, price);
+        assertEquals(part.getPrice(), price);
+    }
 }
