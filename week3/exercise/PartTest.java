@@ -53,4 +53,11 @@ public class PartTest {
         }
 
     }
+    @Test
+    public void testGetTypeInvalid(){
+        char type = 'A';
+        Part part = new Part(type, 10000, 50);
+        assertEquals(part.getType(), type);
+    }
+
 }
