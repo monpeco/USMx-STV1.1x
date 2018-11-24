@@ -71,4 +71,13 @@ public class PartTest {
         Part part = new Part('E', 20000, price);
         assertEquals(part.getPrice(), price);
     }
+    @Test
+    public void testPartDataInvalid(){
+       char type = 'A';
+       int number = 20000;
+       int price = 200;
+       String result = Character.toString(type) + " " + Integer.toString(number) + " " + Integer.toString(price);
+       Part part = new Part(type, number, price);
+       assertEquals(result, part.partData());
+   }
 }
