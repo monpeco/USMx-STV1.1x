@@ -59,5 +59,10 @@ public class PartTest {
         Part part = new Part(type, 10000, 50);
         assertEquals(part.getType(), type);
     }
-
+    @Test    
+    public void testGetNumberInvalid(){
+        int number = 20000;
+        Part part = new Part('E', number, 50);
+        assertEquals(part.getNumber(), number);
+    }
 }
