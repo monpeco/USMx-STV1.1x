@@ -59,7 +59,7 @@ public class Part {
 	// where X is the character for part number, YYYYY is the part number, and Z is the price value
 	public String partData()
 	{
-		String result = "" + type + number + price;
+		String result = "" + type + " " + number + " " + price;
 		return result;
 	}
 }
