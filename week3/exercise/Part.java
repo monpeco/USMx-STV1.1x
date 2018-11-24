@@ -24,7 +24,7 @@ public class Part {
 	public Part(char t, int n, int p)
 	{
 		if (t != 'E' && t != 'D' && t != 'A')
-			throw new NullPointerException("One or more of the parameters have invalid value");
+			throw new IllegalArgumentException("One or more of the parameters have invalid value");
 		
 		if (n < 10000 || n >= 99999)
 			throw new IllegalArgumentException("One parameter has invalid value");
