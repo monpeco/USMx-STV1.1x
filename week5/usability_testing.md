@@ -86,3 +86,15 @@ In an open beta test the software is available upon request and to anyone who ma
 ---
 
 #### Act-like-a-user testing
+
+It is common knowledge that developers and testers working on a product are not like their own typical users. They are more versed in the technology and have above average computer skills and have tendency to concentrate on features as opposed to clean functionality. For example, it is a common mistake for a developer to get excited about having different ways of doing something but normally the end user only wants a single way that works well. The end users are not interested in the technology itself the way the developer is. The technology is there to help them do their job better and easier. Because of this, the user interfaces and the flow of functionality may be biased and inefficient.
+
+So to be a good tester and designer, one has to “act-like-a-user”.  That requires you understand who your user will be, their computer skill level, education, age, etc. and above all else how they plan to use the product. You have to concentrate on the tasks that a user will want and need to do and how they will do it.
+
+Even products geared toward other developers and testers fall short on their usability because again the developers working on these products often fail to consider how their customers will use them. After all, a developer who is given a tool for testing is not interested in the tool itself but how that tool will help him test the code he/she is working on. So they need to learn and understand the tool quickly to be productive in their job.
+
+So again, ideally you want to have real customers involved in your design and testing to help you understand the target audience and your end users.  Then you have to put yourself in their shoes when testing and always concentrate on easy and straight forward interfaces with as few steps as possible to accomplish the needed tasks.
+
+---
+
+#### Examples
