@@ -62,3 +62,27 @@ Nowadays many products are used through the web interfaces or are used as mobile
 ---
 
 #### Alpha and Beta testing
+
+These types of tests are usually done during system deployment stage either after or as part of acceptance testing.  Alpha testing is executed first and is normally done within development organization by either independent team such as a vendor test team or a representative group of end users. Beta testing is then usually done by the end users at their own site on their own testing systems.
+
+##### Alpha Testing
+The testing tries to simulate as close as possible the real operations of end users to find defects before the code is released to key customers doing the beta test or to the general population. Sometimes in-house developers/testers will conduct this testing but they should not be the ones who developed or tested the code previously.
+
+The emphasis is to make sure that the beta testers will not find any major problems and that the majority of the most common tasks and scenarios work well.
+
+All major defects which are found at this time are fixed although as always there is priority, impact, and cost assessment done to determine what to fix and when. Minor design changes may still be done if needed although any redesign is avoided if possible.
+
+##### Beta Testing
+For this testing, the software is sent to the customers (end users) who try out the product earlier in exchange for providing feedback to the development.  The customers are given some specific amount of time to complete their testing and provide feedback. They usually install and run the types of tasks and workloads that they expect to use in their production system.
+
+The product needs to be already well tested and stable so that the customers have a positive experience and not waste their time. During this time there is usually a liaison that communicates with the customers regularly and collects data and there is a dedicated team of developers on call to assist the beta customers and fix the defects quickly so there is no delay in the testing.
+
+This type of testing is important because not only are the customers testing on real systems that they will use with the software but they provide real users’ perspective that often finds undiscovered flaws and issues in the software. This improves the overall quality of the product before it becomes widely available to everyone else.
+
+There are two types of beta testing: open or closed. In the closed type of beta testing the development company contacts a selected group of customers and asks them to be the beta testers. This type of testing is usually done for larger and more complicated products. The company then works closely with those customers during the test.
+
+In an open beta test the software is available upon request and to anyone who may be interested. Often these products can be downloaded online and tried out and are smaller and less complex. The beta testers will have a forum or some way of reporting errors and to provide suggestions of improvement.
+
+---
+
+#### Act-like-a-user testing
