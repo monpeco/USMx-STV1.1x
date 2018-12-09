@@ -239,3 +239,11 @@ https://youtu.be/YNlbrU-v5Tw
 
 #### Exercise Instructions
 
+Before you can start working on your exercise, you need to first install the Eclipse tool and set it up for JUnit. The instructions are located in “Install Eclipse Instructions”.
+
+Then make sure you watch the tutorial videos for code and data coverage examples, which will help you with this exercise.
+
+For this exercise you are provided the source code (Part.java) of a Java class and your mission is to write unit test cases to reach 100% code coverage and reasonable data coverage. You will then run your test cases and note any defects your test cases may have found. There are some deliberate defects in the code. You are to assume that code comments are correct for what each method is supposed to do (acting as the specification documentation) and the code is supposed to match it.
+
+Once you completed implementing your test cases and you have run them, you can take the graded exercise quiz, which will ask you questions about your test cases and results.
+
