@@ -144,3 +144,49 @@ Regardless which scenario is actually performed above, the end result should be 
 ---
 
 #### Instructions
+
+##### Mission:
+
+You have been asked to develop a usability checklist for your team and then to conduct a usability testing of a web site.
+
+##### Objectives:
+
+The goal of this project is for you to research and practice usability testing.  Specifically, you will:
+
+1.         Design checklist of 18-24 items to test related to usability that could be used to test any web page. The items should be the most important things to check for that category and be appropriate for that category.
+
+2.         Perform the usability test using your checklist, analyzing how well the web site performs for each item, then providing summary and conclusion for each category and then an overall summary and conclusion for the whole usability test effort
+
+##### Web site
+
+You will test the home page of Harold Washington Library Center for some of the functionality. Given how much functionality there is at most websites, you want to limit how much you do for this particular exercise. The URL is: https://www.chipublib.org/locations/15/
+
+##### Exercise Steps
+
+You will complete this exercise in two parts using the provided exercise template, as follows:
+
+##### Part A
+
+1.                  Review this week’s materials and research usability testing goals, techniques, best practices, etc. online. Online resources are listed below
+
+2.                  Create a usability test checklist based on what you find during your research.
+
+3.                  Checklist should use the provided categories in the template: Page Layout and Visual Design, Navigation, Site Search Capability, Use of Images, Performance (e.g. loading of pages), Accessibility and Disability
+
+4.                  The checklist should have the most important items (3-5) to test for each category
+
+5.                  Check the solutions document to self-assess how well you did. The actual information will be different but will give you an idea of the kind of items to check for each category
+
+##### Part B
+
+1.                  Use your usability checklist to test the web site and document results for each item from the checklist
+
+2.                  For each category, summarize your findings and provide conclusions on how well the web site and its pages performed for that category
+
+3.                  After you complete testing all the categories and their items, summarize your overall findings and provide conclusions. You should include your overall rating (excellent, good, bad, horrible) of the user usability experience based on your testing with explanation of why you rated the website that way. You should also provide a summary of the improvements that are needed along with their overall severity and importance.
+
+4.                  Check the solutions document to self-assess how well you did. The actual assessment will be different then what you may have done but it will give you an idea what is documented and how
+
+---
+
+#### Template - Usability Test
