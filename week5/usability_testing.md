@@ -98,3 +98,49 @@ So again, ideally you want to have real customers involved in your design and te
 ---
 
 #### Examples
+
+So let’s look some more at usability testing. In the lecture we talked about three basic types of scenarios you can have: (a) goal or task, (b) detailed scenario, or (c) full scale scenario. Now we will look at the example of each.
+
+Imagine that you are part of a development team working on a new website for IHOP Company (www.ihop.com), which is a diner type restaurant chain. Imagine that IHOP does not have a web page yet and this is their first web presence and your team needs to make sure that the user interface is user friendly, easy to use and learn, and works correctly. So your customer is the IHOP Company but your end users will be the customers of IHOP.
+
+Here are some example scenarios that you may create for the usability testing that would be executed by an end-user tester or a tester acting as a user:
+
+##### Goal or task
+
+This type of scenario provides task descriptions without steps. It should be specific and give the tester as much information as needed for what to find without telling them how to do it and without using terminology or language that helps them with navigation.
+
+Task: Find IHOP restaurant in Chicago IL that is close to current location (zip code 60605) and directions to get there
+
+ 
+
+##### Detailed scenario
+
+This type of scenario describes the user characteristics that the user interface should be designed for. It also provides more details in the scenario then the task scenario.
+
+Scenario: It was a busy day for a young family with three children and the parents decided they want to go out to eat for late lunch. They are thinking of IHOP restaurant but they are new to Chicago, IL area as they just moved here last month when the father received a new job as an accountant. They need to find the directions quickly because the kids are already getting restless. After dinner they want to check out the Shedd Aquarium at 1200 S. Lake Shore Drive, Chicago, IL 60605.
+
+ 
+
+##### Full Scale Scenario
+
+This type of scenario has the exact steps to accomplish the task that need to be followed and tested.
+
+Find IHOP restaurant in Chicago IL that is close to Shedd Aquarium at 1200 S. Lake Shore Drive, Chicago, IL 60605 and the directions to get there.
+
+1.       From www.ihop.com Home page click on Locations link location on the right side IHOP logo at the top of the screen.
+
+2.       Type in the Chicago, IL 60605 in search field and select United States for the country
+
+3.       Click search image on the right side of Unites States selection
+
+4.       Check that 5 locations are displayed and ordered by the least distance to the zip code provided in the search
+
+5.       Click on the number 1 location icon on the map
+
+6.       Click on Get Directions link on left side of the screen below the address
+
+Regardless which scenario is actually performed above, the end result should be the same with the “tester”, regardless if end user or tester, finding the correct location and the directions how to get there. In addition, for the first two types of scenarios, the person testing would either be observed or would document what they did and what trouble they had if any to find the information. 
+
+---
+
+#### Instructions
