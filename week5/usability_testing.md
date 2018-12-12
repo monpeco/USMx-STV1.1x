@@ -486,4 +486,50 @@ Summary and Conclusion
 
 Overall the website did very well performance, loading pages quickly and without errors and loading middle content first so that user could already start viewing it or reading while the last of the content loads.
 
+ 4.3.6 Accessibility and Disability
  
+
+Item 1 Findings:  “The use of red and blue together is avoided as they may not be distinguished by users who are color blind”
+
+Pass. Red color is not used at all across the website
+
+ 
+
+Item 2 Findings: “The font sizes are not small”
+
+Pass. Font size is reasonable even when window is small in size.
+
+ 
+
+Item 3 Findings: “Icons and images have text description”
+
+Needs improvement – medium. Images do not have alt text description.
+
+ 
+
+Item 4 Findings: “Fields on forms that are required have both textual prompt such as asterisk and not just color such as red”
+
+Pass. Checked reservation form which gave an error message identifying which field is missing information. The interlibrary load form has red asterisks for mandatory fields.
+
+ 
+
+Summary and Conclusion
+
+Overall the website did well for this category except for missing image text. However, for thorough testing of this category, one should use tools for testing accessibility.
+
+ 
+
+4.3.7 Overall Summary and Conclusion
+The website performed well relative to usability and the items that were tested. The user interfaces provide a good user experience with no major issues in navigation, content, images or loading performance. A few low and medium improvements have been identified to include:  missing site map and breadcrumbs, no ability to go back to previous page except through web browser back functionality, no ability to go back directly to home page, search query being sensitive to abbreviations, and images missing alternative text information.
+
+ 
+
+5. Assumptions and Constraints
+5.1            Assumptions
+None
+
+5.2            Constraints
+The scope and depth of the testing was limited to just enough to demonstrate how in-house usability testing could be conducted.
+
+6. References
+NA
