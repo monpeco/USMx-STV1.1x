@@ -418,3 +418,72 @@ Summary and Conclusion
 
 Overall the search option has a lot of functionality and filtering but will not necessarily find the existing information on the website. Improvements in that area should be made.
 
+4.3.4 Use of Images
+ 
+
+Item 1 Findings:  “Images used are relevant and meaningful to the content”
+
+Pass. All images on the pages tested are relevant to the content such as pictures of new books available (home page) and rooms for rent (private event rentals).
+
+ 
+
+Item 2 Findings: “There are not so many images where they obscure the content”
+
+Pass. Number of images is limited across home and sub-pages
+
+ 
+
+Item 3 Findings: “Animated images are not distracting and do not endlessly repeat”
+
+Pass. There are no animated images across the tested pages
+
+ 
+
+Item 4 Findings: “Company logo is clearly visible and on the top left side of the home page”
+
+Pass. There is icon of Chicago Public Library on the top left of the home page and on all pages which is a link to the  root page www.chipublib.org.
+
+ 
+
+Item 5 Findings: “The use of images enhances the user’s experience”
+
+Pass. All images add additional information to the content.
+
+ 
+
+Summary and Conclusion
+
+Use of images is excellent with meaningful and well placed images without any unnecessary ones or cluttering the pages.
+
+4.3.5 Performance
+ 
+
+Item 1 Findings:  “When navigate to the home page, it loads within 5 seconds to include all images”
+
+Pass. Loads within 5 seconds every time tried – 10 times.
+
+ 
+
+Item 2 Findings: “There are no load errors as navigate between pages”
+
+Pass. No loading errors encountered on any pages
+
+ 
+
+Item 3 Findings: “If there are many images on a sub-page, the textual content is rendered first while the images may still load”
+
+Pass. Parts of the page content already loaded (middle of page) while other sections were still loading.
+
+ 
+
+Item 4 Findings: “If something has to take longer to load, the page provides a message telling user what is happening”
+
+Needs improvement – low. When internet connection was slow and the sub-page took a long time to load, there was no message.
+
+ 
+
+Summary and Conclusion
+
+Overall the website did very well performance, loading pages quickly and without errors and loading middle content first so that user could already start viewing it or reading while the last of the content loads.
+
+ 
