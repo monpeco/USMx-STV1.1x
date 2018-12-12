@@ -214,4 +214,75 @@ Testing will use Lenovi ideapad with Windows 7, mouse, and keyboard.
 4.1 Test Strategy
 Testing strategy for this particular test will be to first identify the key items to test for each specified category to create the checklist and then to use that checklist for the testing. The tester will concentrate on thinking like a typical library user during the test.
 
+4.2 Test Checklist
+4.2.1 Page Layout and Visual Design
+Item 1: The page layout is clean without too many images or text that makes it confusing to find information
+
+Item 2: There are no elements on the page that seem out of place or that do not seem to be associated with company’s information
+
+Item 3: The page gives the most important information and lets user drill-down for additional details
+
+Item 4: Color scheme used does not have more than three or four colors and the colors are neutral and consistent across
+
+Item 5: Page can be used without scrolling horizontally
+
+Item 6: As page is resized, all the elements resize with it
+
+Item 7: Buttons and navigation links are easily recognizable and clickable
+
+4.2.2 Navigation
+Item 1: There are navigation aids such as links at the bottom of the home page for different categories of data, breadcrumbs, and site map
+
+Item 2: The user can easily find where to login to the site
+
+Item 3: Moving forward to find more details and back to previous page is easy and obvious
+
+Item 4: The back button for the browser lets user go back to previous page
+
+Item 5: User can go back to Home page after drilling down for more details
+
+4.2.3 Site Search Capability
+Item 1: There is search capability for the web site that is easy to find
+
+Item 2: The search box allows long queries
+
+Item 3: The results of the search are appropriate and there is ability to narrow/filter the search
+
+Item 4: If there are no results returned, the system provides help for improving the search query
+
+Item 5: The search takes no longer than 5 second to complete
+
+Item 6: The search results are ordered with most relevant on top
+
+4.2.4 Use of Images
+Item 1: Images used are relevant and meaningful to the content
+
+Item 2: There are not so many images where they obscure the content
+
+Item 3: Animated images are not distracting and do not endlessly repeat
+
+Item 4: Company logo is clearly visible and on the top left side of the home page
+
+Item 5: The use of images enhances the user’s experience
+
+4.2.5 Performance
+Item 1: When navigate to the home page, it loads within 5 seconds to include all images
+
+Item 2: There are no load errors as navigate between pages
+
+Item 3: If there are many images on a sub-page, the textual content is rendered first while the images may still load
+
+Item 4: If something has to take longer to load, the page provides a message telling user what is happening
+
+ 
+
+4.2.6 Accessibility and Disability
+Item 1: The use of red and blue together is avoided as they may not be distinguished by users who are color blind
+
+Item 2: The font sizes are not small
+
+Item 3: Icons and images have text description
+
+Item 4: Fields on forms that are required have both textual prompt such as asterisk and not just color such as red
+
 
