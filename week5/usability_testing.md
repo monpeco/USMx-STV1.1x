@@ -190,3 +190,28 @@ You will complete this exercise in two parts using the provided exercise templat
 ---
 
 #### Template - Usability Test
+
+#### Usability Testing - Solution
+
+1. Introduction
+1.1 Purpose
+The purpose of this document is to provide a generic checklist to evaluate the usability of a web site. The second part of the document also documents the findings, using the checklist, for the Harold Washington Library Center home page.
+
+1.2 Scope
+The scope of this test will be to the home page (and a couple sub-pages) of Harold Washington Library Center at URL https://www.chipublib.org/locations/15/. Only a subset of the functionality and user interfaces will be considered and tested.
+
+2. System Overview
+Harold Washington Library Center is a Chicago, IL public library. The website provides information about the library history, hours and location, parking, events, news, etc. and it also allows a user to login to his account, contact a librarian with questions, reserve a computer and other resources, and get other information such as how to get a library card, how to borrow books or DVDs, etc.
+
+3. Test Requirements
+3.1            Software Requirements
+The tester will need a system with internet access and a browser to access the URL. Firefox browser (v 52.0.1) will be used for the testing.
+
+3.2            Hardware Requirements
+Testing will use Lenovi ideapad with Windows 7, mouse, and keyboard.
+
+4. Testing
+4.1 Test Strategy
+Testing strategy for this particular test will be to first identify the key items to test for each specified category to create the checklist and then to use that checklist for the testing. The tester will concentrate on thinking like a typical library user during the test.
+
+
