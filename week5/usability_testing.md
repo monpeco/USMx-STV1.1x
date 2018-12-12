@@ -336,3 +336,41 @@ Summary and Conclusion
 
 Overall for all the items tested this category gets high marks. The page looks professional, is well organized, and elements that can be clicked on to drill down are easily recognizable. No improvements are needed.
 
+
+4.3.2 Navigation
+ 
+
+Item 1 Findings:  “There are navigation aids such as links at the bottom of the home page for different categories of data, breadcrumbs, and site map”
+
+Needs improvement – severity low. There are links to Services items, FAQ, and other information at the bottom. There is no site map and breadcrumbs are not used. Adding those would aid in the navigation through the website but the existing links support finding most pages.
+
+ 
+
+Item 2 Findings: “The user can easily find where to login to the site”
+
+Pass. The login link is on top right corner of home page where one would expect it to be.
+
+ 
+
+Item 3 Findings: “Moving forward to find more details and back to previous page is easy and obvious”
+
+Needs improvement – severity low. The links work as expected to drill down for more information or for an action but there is no way to return except for using the browser back button. Adding breadcrumbs or back to previous button would help with navigation.
+
+ 
+
+Item 4 Findings: “The back button for the browser lets user go back to previous page”
+
+Pass. A number of links were pressed from home page and browser back button returned to home page. Also tried another link from sub-space and back button worked.
+
+ 
+
+Item 5 Findings: “User can go back to Home page after drilling down for more details”
+
+Needs improvement – medium. There is no way to go back to home page except by using the browser back button. When one drills down a few sub-pages, it is annoying and time wasting to have to keep clicking back to get back to home page.
+
+ 
+
+Summary and Conclusion
+
+Overall based on the items and pages tested, the navigation down is easy but not as easy to return. Some improvements should be made especially the ability to return to Home page directly.
+
