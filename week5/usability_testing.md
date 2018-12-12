@@ -286,3 +286,53 @@ Item 3: Icons and images have text description
 Item 4: Fields on forms that are required have both textual prompt such as asterisk and not just color such as red
 
 
+4.3 Usability Test Findings
+4.3.1 Page Layout and Visual Design
+ 
+
+Item 1 Findings:  “The page layout is clean without too many images or text that makes it confusing to find information”
+
+Pass. When the page loads there is a small image of the library building and a map showing where it is located. On the left are the hours with indication if currently open or not. It is clear and not too cluttered. The page goes down but it is divided into obvious sections such as “Holidays and Closures”, “New titles”, “Recent News” etc. All very clear and well layout.
+
+ 
+
+Item 2 Findings: “There are no elements on the page that seem out of place or that do not seem to be associated with company’s information”
+
+Pass. All information on home page pertains directly to the library, its services, and it operation
+
+ 
+
+Item 3 Findings: “The page gives the most important information and lets user drill-down for additional details”
+
+Pass. The page gives hours of operating and address and the “Get Directions” is a link. The Facilities section has different links to learn more about them such as “Computers”, “Study Rooms”, etc. And the Features section also gives links for example “Homework help”, “Computer help”, etc. In both sections it is obvious that it is a link if one has experience with web links (it is underlined in different color). Hovering over that item changes the mouse icon to hand as expected for hyperlinks.
+
+ 
+
+Item 4 Findings: “Color scheme used does not have more than three or four colors and the colors are neutral and consistent across”
+
+Pass. There are only four basic colors used all in neural shades: black, dark green, white, and blue.
+
+ 
+
+Item 5 Findings: “Page can be used without scrolling horizontally”
+
+Pass. No need to scroll even when page is made smaller.
+
+ 
+
+Item 6 Findings: “As page is resized, all the elements resize with it”
+
+Pass. As page is made smaller or bigger, everything on the page changes the size in accordance.
+
+ 
+
+Item 7 Findings: “Buttons and navigation links are easily recognizable and clickable”
+
+Pass. All links are underlined and blue or when one hovers mouse over an item that can be clicked, it changes color of text or the box itself and the mouse pointer becomes a hand.
+
+ 
+
+Summary and Conclusion
+
+Overall for all the items tested this category gets high marks. The page looks professional, is well organized, and elements that can be clicked on to drill down are easily recognizable. No improvements are needed.
+
