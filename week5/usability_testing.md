@@ -374,3 +374,47 @@ Summary and Conclusion
 
 Overall based on the items and pages tested, the navigation down is easy but not as easy to return. Some improvements should be made especially the ability to return to Home page directly.
 
+
+4.3.3 Site Search Capability
+ 
+
+Item 1 Findings:  “There is search capability for the web site that is easy to find”
+
+Pass. The Search icon is in right corner of home page as expected with advanced search options and filtering options. Search icon is available on every page.
+
+ 
+
+Item 2 Findings: “The search box allows long queries”
+
+Pass. Searched using “online advanced college preparation SAT” which is not especially long but reasonably long and bigger queries was allowed.
+
+ 
+
+Item 3 Findings: “The results of the search are appropriate and there is ability to narrow/filter the search”
+
+Needs improvement - medium. Used search query “online advanced college preparation SAT” with website option which brought up an article discussing Homework help. However, it did not provide a link to the information on homework help page where all these terms are located and where the service is explained. Changing the search to “online advanced college prep SAT” found the link but there is no way to figure out that a page uses abbreviation like that. Filtering is available in the advanced search option.
+
+ 
+
+Item 4 Findings: “If there are no results returned, the system provides help for improving the search query”
+
+Pass. There are suggestions on improving query along with phone number and hours of operation to contact the library and “chat with a librarian window”.
+
+ 
+
+Item 5 Findings: “The search takes no longer than 5 second to complete”
+
+Pass. The search returns in about 5 seconds regardless if it found something or not.
+
+ 
+
+Item 6 Findings: “The search results are ordered with most relevant on top”
+
+Pass. Did a catalog search on “coffee” and books and magazines with coffee as topic were displayed first before less relevant resources.
+
+ 
+
+Summary and Conclusion
+
+Overall the search option has a lot of functionality and filtering but will not necessarily find the existing information on the website. Improvements in that area should be made.
+
