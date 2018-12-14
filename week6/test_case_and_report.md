@@ -37,3 +37,15 @@ Each assertion in a specification should be reviewed against a list of desirable
 Further, it is important to differentiate requirements from design documents. Requirements should not talk about “how” to do something and design specs should not talk about “why” to do things.
 
 ---
+
+#### Functional vs Non-Functional test cases
+
+We have been discussing many different tests and different test techniques but most had one thing in common - they all concentrated on the functional requirements of the system or in other words its function and behavior. The one exception was the usability testing.
+
+So let’s talk a little about a different test emphasis which is equally important – non-functional requirements. Non-functional requirement is not concerned with the functionality of the system but rather the operation and serviceable.  So the common non-functional requirements include systems usability, performance, scalability, security, serviceability, logging, reliability, and so forth.
+
+Non-functional requirements normally apply to the whole system and have to be tested as such. That is why they are usually executed once the code is integrated and have been function tested. An example of non-functional testing is performance testing discussed below.
+
+---
+
+#### Performance Testing
