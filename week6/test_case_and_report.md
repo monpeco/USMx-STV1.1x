@@ -93,3 +93,25 @@ The next step is to identify tests which 'exercise' each of the elements in your
 ---
 
 #### Test Selection
+
+Given that we acknowledge we can't achieve 100% coverage, we must now take a critical eye to our list of test cases. We must decide which ones are more important, which ones will exercise the areas of risk and which ones will discover the most bugs. But how? Bugs tend to cluster around one or more areas within the system. These define the areas of risk in the product. Perhaps this section of the code was completed in hurry or perhaps this section of the 'input data space' was particularly difficult to deal with. Whatever the reason, these areas are inherently more risky, more likely to fail than others.
+
+You must try to achieve a balance. Your aim should be to provide a broad coverage for the majority of your areas and deep coverage for the most risky areas discovered. Broad coverage implies that an element in the system is evaluated in an elementary fashion while deep coverage implies a number of repetitive, overlapping test cases which exercise every variation in the element under test. The aim of broad coverage is to identify risky areas and focus the deeper coverage of those areas to eliminate the bulk of issues. It is a tricky balancing act between trying to cover everything and focusing your efforts on the areas that require most attention.
+
+---
+
+#### Test Scripting
+
+There are several schools of thought to test scripting. In risk adverse industries such as defense and finance there is a tendency to emphasize scripting tests before they are executed. These industries are more concerned with the potential loss from a software defect than the potential gain from introducing a new piece of software. As a consequence there is a heavy emphasis on verifiable test preparation (although observance of this verification might only be lip-service!).
+
+And in some industries, external compliance issues (legal compliance or contractual obligation for example) mean that a script-heavy approach is mandated.
+
+On the other hand, in consumer software development, a looser approach is normally taken. Since speed-to-market is more important than the risk of a single defect, there is considerable latitude in the test approach. Specific test cases may not be documented or loosely documented and testers will be given a great deal of freedom in how they perform their testing.
+
+The ultimate extension of this is unscripted or exploratory testing. In this form of testing, there is a considerable amount of preparation done but test cases are not pre-scripted. The tester uses their experience and a structured method to 'explore' the software and uncover defects. They are free to pursue areas which they think are more risky than others.
+
+Scripting, it is argued, is a waste of time. Often the amount of time spent on scripting can actually exceed the amount of time in execution. If you have an experienced tester with the right set of tools and the right mindset, it is more effective and more cost to turn them loose to find some bugs right away. This concept is almost heresy in some camps. There is also an important legal aspect to consider as Cem Kaner points out in his book “Testing Computer Software”. If you are responsible for releasing a piece of software that causes financial loss you could be liable for damages. Further, if you cannot prove that you have conducted due diligence through adequate testing you may be guilty of professional negligence. One of the goals of test preparation therefore is to provide an audit trail which shows the efforts you have made to verify the correct behavior of the software. Whether or not you script every case is immaterial. What matters is how you can demonstrate that you prepared your testing in a methodical and professional manner.
+
+---
+
+#### Test Cases
