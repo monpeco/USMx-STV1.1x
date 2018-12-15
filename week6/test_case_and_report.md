@@ -115,3 +115,15 @@ Scripting, it is argued, is a waste of time. Often the amount of time spent on s
 ---
 
 #### Test Cases
+
+Let’s assume you have to document your tests; a test case documents a test, intended to prove a requirement or feature. The relationship is not always one-to-one, sometimes many test case are required to prove one requirement. Sometimes the same test case must be extrapolated over many screens or many workflows to completely verify a requirement (there should usually be at least one test case per requirement however).
+
+Some methodologies (like Rational Unified Process - RUP) specify there should be two test cases per requirement – a positive test case and a negative test case. A positive test case is intended to prove that the function-under-test behaves as required with correct input and a negative test is intended to prove that the function-under-test does not provoke an error with incorrect input (or responds gracefully to that error).
+
+This is where the debate about what to script, and what not to, heats up. If you were to script separately for every possible negative case, you would be scripting till the cows come home. Consider a 'date-of-birth' field in a software application. It should only accept 'correctly formatted' dates. But what is a correct format? It is probably possible to generalize this from the requirements and come up with a single test case which specifies all the acceptable date formats. But what about the negative case? Can you possible extrapolate all the possible inputs and specify how the system should react? Possibly, but it would take you forever. To generalize it you could simply say that the system should produce an error with 'unacceptable input'
+
+One approach is to view a positive test case as implying a negative case. If your positive case also documents how the software is expected to handle exceptions then it covers both the positive cases and the negative cases. If your testers are well trained and have brains they will attempt all the possible input values in an attempt to provoke an exception.
+
+---
+
+#### Test Suite
