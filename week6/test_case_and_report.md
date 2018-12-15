@@ -127,3 +127,15 @@ One approach is to view a positive test case as implying a negative case. If you
 ---
 
 #### Test Suite
+
+A test suite is a collection of test cases grouped together to test some specific functionality or aspect of a system or in other words some specific behavior of the software. The test suite should have some documentation and naming convention to indicate what it is testing and how to execute the tests (e.g. testing system setup instructions).  There will often be multiple test suites, each with a different set of goals to test the same software product.
+
+Test suites can include automated test cases, manual test cases, or combination of both.  Tests can be defined into test suites up front or can be grouped into test suite afterwards. For example, one can define and/or automate function tests for complete functionality testing and then select a number of these test cases to go into a regression test suite.
+
+A tester may add additional test cases into a test suite as the testing progresses or as the product evolves whether through modifications to the existing code or new code being added.
+
+In addition, there can be separate test suites created for specific non-functional requirements or considerations such as stress test suite, scalability test suite, or logging test suite, to name a few.
+
+---
+
+#### Tracking Progress
