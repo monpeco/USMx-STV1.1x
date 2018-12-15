@@ -87,3 +87,9 @@ The purpose of test planning therefore is to put together a plan which will deli
 ---
 
 #### Test Identification
+
+The next step is to identify tests which 'exercise' each of the elements in your system. This isn't a one-to-one relationship. Many tests might be required to validate a single element of your system and a single test may validate more than one point on one axis. For example, a single test could simultaneously validate functionality, code structure, a UI element and error handling. So the first step is in deciding 'what' you will test.
+
+---
+
+#### Test Selection
