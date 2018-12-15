@@ -75,3 +75,15 @@ Performance testing is a tricky, technical business. The issues that cause perfo
 ---
 
 #### The Purpose of Test Planning
+
+As an organized activity, testing should be planned, to a reasonable extent. But test planning represents a special challenge. The aim of testing is to find bugs in the product and so the aim of planning is to plan how to find the bugs in the product. The paradox is of course, that if we knew where the bugs were then we could fix them without having to test for them. Testing is the art of uncovering the unknown and therefore can be difficult to plan.
+
+The usual, naïve retort is that you should simply test “all” of the product. Even the simplest program however will defy all efforts to achieve 100% coverage (as we discussed previously). Even the term coverage itself is misleading since this represents a plethora of possibilities. Do you mean code coverage, branch coverage, or input/output coverage? AS you learned, each one is different and each one has different implications for the development and testing effort. The ultimate truth is that complete coverage, of any sort, is simply not possible (nor desirable).
+
+So how do you plan your testing? At the start of testing there will be a (relatively) large number of issues and these can be uncovered with little effort. As testing progress more and more effort is required to uncover subsequent issues. The law of diminishing returns applies and at some point the investment to uncover that last 1% of issues is outweighed by the high cost of finding them. The cost of letting the customer or client find them will actually be less than the cost of finding them in testing.
+
+The purpose of test planning therefore is to put together a plan which will deliver the right tests, in the right order, to discover as many of the issues with the software as time, budget and your risk appetite allows.
+
+---
+
+#### Test Identification
