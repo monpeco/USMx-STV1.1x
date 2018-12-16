@@ -151,3 +151,24 @@ Regardless of how you prepare for testing you should have some kind of plan. If 
 ---
 
 #### Test Report
+
+At the end of a testing cycle (e.g. function test, system test, and integration test) there is usually a document that summarizes the completed test effort. Sometimes it may be added to the test plan itself. This report may be reviewed by development, testers, and management to determine that the test have in fact completed all the tasks that were schedules and that it reached the agreed on exit criteria.
+
+The report is also often used as documentation of what was done that can be used for analysis, to improve future testing, or to analyze how something was missed if it is discovered later. Therefore it usually includes what was tested, how long it took, what defects were done, etc.  Management often takes the summary and the numbers to present to the project manager or his/her manager for status report. Therefore the data is often presented in some easily to view form such as spreadsheet or graph or both where the numbers of importance stand out. The numbers of particular interest are planned number of weeks or months for testing versus actual weeks/months; planned or defined number of test cases versus actual defined; number of test cases executed; and number of defects found.
+
+Therefore typical format for this report includes:
+
+*  scope of testing – what was tested and what was not tested and any deviation from the original plan
+*  test exit or acceptance criteria – what functionality/components/aspects of the software to test and the level of stability reached; usually it also includes agreement on outstanding defects such all critical and high severity defects must be fixed before testing can be completed 
+*  test strategy – what systems were used for testing, what was manual versus automated, what was the testing setup, what methodology was used for testing to include any tools or frameworks used
+*  final results – number of defined test cases (how many manual versus automated), which were executed or not; final status of the testing effort and often a summary and conclusion of the perception (e.g. current stability) of the product and the test effort; charts and numbers over timeline (e.g. number of test cases executed for example per week or month and defects found and defects fixed during that timeframe)
+*  defects and current status – there may be a list of defects grouped in some logical matter or just categories of defects and numbers (e.g. per severity or per component or functionality); there can be statistical data how long it took for defects to be fixed, how many blocking defects there were and how long they blocked the testing; and current status of defects as far as which fixed, in progressed, moved to be fixed in next release, etc.
+
+**Citation**
+
+Some of the content comes from the following reference, with a number of modifications:
+
+Jenkins, N. (2017). Software Testing Primer v2.
+
+---
+
