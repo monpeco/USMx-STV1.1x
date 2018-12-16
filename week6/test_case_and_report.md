@@ -139,3 +139,15 @@ In addition, there can be separate test suites created for specific non-function
 ---
 
 #### Tracking Progress
+
+Depending on your test approach, tracking your progress will either be difficult or easy. If you use a script-heavy approach, tracking progress is easy. All you need to do is compare the number of scripts you have left to execute with the time available and you have a measure of your progress. If you don't script, then tracking progress is more difficult. You can only measure the amount of time you have left and use that as a guide to progress.
+
+If you use advanced metrics you can compare the number of defects you've found with the number of defects you expect to find. This is an excellent way of tracking progress and works irrespective of your scripting approach.
+
+But tracking progress without adjusting your plan is wasting information. Suppose you script for 100 test cases, each taking one day to execute. The project manager has given you 100 days to execute your cases. You are 50 days into the project and are on schedule, having executed 50% of your test cases. But you've found no defects. The hopeless optimist will say, “Well! Maybe there aren't any!” and stick to their plan. The experienced tester will say something unprintable and change their plan. The chance of being 50% of the way through test execution and not finding defects is extremely slim. It either means there is a problem with your test cases or there is a problem with the way in which they are being executed. Either way, you're looking in the wrong place.
+
+Regardless of how you prepare for testing you should have some kind of plan. If that plan is broken down into different chunks you can then examine the plan and determine what is going wrong. Maybe development hasn’t delivered the bulk of the functional changes yet? Maybe the test cases are out of date or aren't specific enough? Maybe you've underestimated the size of the test effort? Whatever the problem, you need to jump on it quick. 
+
+---
+
+#### Test Report
