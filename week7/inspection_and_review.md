@@ -87,3 +87,50 @@ Once rework of the document or code is completed, there may be another inspectio
 ---
 
 #### Code Readings
+
+In order to conduct code review or code inspection, or to make any changes to an existing code, you need to be able to read the code and understand what it does. That is often difficult especially for large and complex product. Often you can start with the documentation whether requirements documents, design documents, or comments in the code itself. However, documentation is notoriously outdated and while a good start, you cannot rely on it being complete and/or accurate.
+
+As a general rule, you get better in reading code as you gain experience doing just that and writing code yourself. But there are some common approaches that help with code reading as well. One approach is to run the code to see what it does and use a debugger (program that allows to step through the code and inspect the state of data and memory) or to add print statements in areas of interest to gain a better understanding of what the code is doing there.
+
+However, often running the code may not possible especially when preparing for a code review where as a reviewer you have no access to the code or a system to run it. So the approach is to use top-down approach where you try to understand the high level view of the code and then drill down for details as needed.
+
+A good place to start is often the entry point of the system, such as a main method in many programming languages.  If the code is a library framework without a main, then you can look for the highest level component or class to start – one that would be initialized by main method or user interface if added.
+
+So once you find the entry point, you should look at how the program initializes itself and how it ends whether normally or abnormally. If the code is written well the methods or functions it calls will have meaningful names that give you a hint and there will be comments as well.
+
+For example, you may have code such as:
+
+```
+if (choice == 1) {
+    m.addDevice(device);    // add a new device to the plan
+}
+else if (choice == 2) {
+    m.removeDevice(device); // remove the device from the plan
+}
+else if (choice == 3) {
+    m.updateDevice(device); // update an existing device
+}
+else {
+    m.exit()                // clean up and exit menu
+}
+```
+
+Without knowing anything else we can determine that this piece of code gets some input (choice) that determines what action should be performed and the actions include adding a device, removing a device, or updating a device in some plan. And if the input is not 1, 2, or 3 then the system will do some cleanup and exit a menu.
+
+So that is a good start and to learn more we would look at the details how these actions are performed (look at each method being called) and look at the caller of this piece of code to learn how the input is determined and what exactly is stored in “device”.
+
+Whether you trace the whole program using a systematic strategy or you only study portions of the code as needed, will depend on your objective for reading the code in the first place. For example, for a code review you may only need to understand some specific implementation of a functionality that will be reviewed. In either case you will need to find a starting point and then drill down to learn more details about the code.
+
+There are two different ways of drilling deeper into the functionality. One way is to drill all the way down on a specific branch concentrating on that single functionality (depth first). For example starting with addDevice() and following the methods it calls and the methods they call until you reach the deepest code or the level of details you are interested in. Another approach is to look at each functionality one level at a time to gain understanding for each method as you progress (breath first). Which method is used is a personal preference and based on your objective. Given that time is always limited, you may use one approach or the other depending if you are more interested in details of a specific functionality or you need to understand all functionalities but not necessarily in as great detail.
+
+Regardless of you approach, it is often useful to draw graphs or flowcharts and take notes of what you are finding and learning as you drilldown especially key methods or variables. And you want to understand and keep track of who calls whom especially for key classes/components and methods/functions.
+
+Another approach in reading code is to look for some key areas based on what you want to learn. So for example if you want to know how the code is handling files it uses for storage, you would look for classes, methods, and code relating to files. And the way to start is to search the program for keywords whether in code or comments, for example “file” or “open” or “create” using a non-case sensitive search. Or if you want to learn about a database, you mail look for “database”, “record”, “table”, “query”, or “row”. You get the idea.
+
+And lastly, for object-oriented code specifically, you also want to look for abstract classes and interfaces and the sub-classes that implement them and look for inheritance, polymorphism, and class libraries used. Understanding these relationships will make a great difference in your understanding of the code.
+
+---
+
+
+
+
