@@ -21,3 +21,16 @@ Defect Reports have a longevity that far exceeds their immediate use. They may b
 ---
 
 #### Writing a Defect - Introduction
+
+So what makes a good defect report? Often defect reports do not have enough information or they are inaccurate and so they are either rejected or when reviewed later, it is impossible to say what the actual problem was. But there are guidelines on what makes a good report, as discussed in the next units:
+
+* Characteristics of a Good Defect Report
+* Isolation and Generalization
+* Severity
+* Status
+* Elements of a Defect Report
+* Root Cause Analysis
+
+---
+
+#### Writing a Defect - Characteristics of a Good Defect Report
