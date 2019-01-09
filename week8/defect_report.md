@@ -90,3 +90,9 @@ Defects should be assessed in terms of impact and probability. Impact is a measu
 ---
 
 #### Writing a Defect - Elements of a Defect Report
+
+While the fields in the defect report may defer slightly based on a defect tracking tool used and the organization where the defect occurred, there are some basic fields or provided information that most defect reports include.
+
+| Item | Description |
+| ------- | ----------- | 
+| Title   | A unique, concise and descriptive title for a defect is vital. It will allow the defect to be easily identified and discussed. Good : “Closed” field in “Account Closure” screen accepts invalid date. Bad : “Closed field busted” |
