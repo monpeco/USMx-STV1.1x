@@ -59,4 +59,13 @@ A defect report that is written without isolating and generalizing it is a half 
 
 ---
 
-#### 
+#### Writing a Defect - Severity
+
+The importance of a defect is usually denoted as its “severity”. There are many schemes for assigning defect severity – some complex, some simple. Almost all feature “Severity-1” and “Severity-2” classifications which are commonly held to be defects serious enough to delay completion of the project. Normally a project cannot be completed with outstanding Severity-1 issues and only with limited Severity-2 issues.
+
+Often problems occur with overly complex classification schemes. Developers and testers get into arguments about whether a defect is Sev-4 or Sev-5 and time is wasted. A simpler scheme may be more efficient.
+
+Defects should be assessed in terms of impact and probability. Impact is a measure of the seriousness of the defect when it occurs and can be classed as “high” or “low” – high impact implies that the user cannot complete the task at hand, low impact implies there is a workaround or it is a cosmetic error. Probability is a measure of how likely the defect is to occur and again is assigned either “Low” or “High”. This removes the majority of debate in the assignment of severity.
+
+---
+
