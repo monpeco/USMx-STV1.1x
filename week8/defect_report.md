@@ -96,3 +96,8 @@ While the fields in the defect report may defer slightly based on a defect track
 | Item | Description |
 | ------- | ----------- | 
 | Title   | A unique, concise and descriptive title for a defect is vital. It will allow the defect to be easily identified and discussed. Good : “Closed” field in “Account Closure” screen accepts invalid date. Bad : “Closed field busted” |
+| Severity | An assessment of the impact of the defect on the end user |
+| Status | The current status of the defect |
+| Initial configuration | The state of the program before the actions in the “steps to reproduce” is to be followed. All too often this is omitted and the reader must guess or intuit the correct pre-requisites for reproducing the defect. |
+| Software Configuration | The version and release of software-under-test as well as any relevant hardware or software platform details (e.g. Win 7 vs Win Vista) | 
+| Steps to Reproduce | An ordered series of steps to reproduce the defect Good : 1. Enter “Account Closure” screen 2. Enter an invalid date such as “54/01/07” in the “Closed” field 3. Click “Okay” Bad: If you enter an invalid date in the closed field it accepts it! |
