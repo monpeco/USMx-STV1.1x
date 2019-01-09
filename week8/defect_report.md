@@ -69,3 +69,24 @@ Defects should be assessed in terms of impact and probability. Impact is a measu
 
 ---
 
+#### Writing a Defect - Status
+
+* **Status** represents the current stage of a defect in its life cycle or workflow. Commonly used status flags are:
+
+* **New** – a new defect has been raised by testers and is awaiting assignment to a developer for resolution
+
+* **Assigned** – the defect has been assigned to a developer for resolution
+
+* **Rejected** – the developer was unable to reproduce the defect (or determined the behavior is not a defect because it is working as designed) and has rejected the defect report, returning it to the tester that raised it
+
+* **Fixed** – the developer has fixed the defect and checked in the appropriate code
+
+* **Ready for test** – the release manager has built the corrected code into a release and has passed that release to the tester for retesting
+
+* **Failed retest** – the defect is still present in the corrected code (or a new related defect was introduced) and the defect is passed back to the developer
+
+* **Closed** – the defect has been correctly fixed and the defect report may be closed, subsequent to review by a test lead.
+
+---
+
+#### Writing a Defect - Elements of a Defect Report
