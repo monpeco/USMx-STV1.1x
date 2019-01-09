@@ -101,3 +101,13 @@ While the fields in the defect report may defer slightly based on a defect track
 | Initial configuration | The state of the program before the actions in the “steps to reproduce” is to be followed. All too often this is omitted and the reader must guess or intuit the correct pre-requisites for reproducing the defect. |
 | Software Configuration | The version and release of software-under-test as well as any relevant hardware or software platform details (e.g. Win 7 vs Win Vista) | 
 | Steps to Reproduce | An ordered series of steps to reproduce the defect Good : 1. Enter “Account Closure” screen 2. Enter an invalid date such as “54/01/07” in the “Closed” field 3. Click “Okay” Bad: If you enter an invalid date in the closed field it accepts it! |
+| Expected behavior | What was expected of the software, upon completion of the steps to reproduce. Good: The functional specification states that the “Closed” field should only accept valid dates in the format “dd/mm/yy” Bad: The field should accept proper dates. |
+| Actual behavior | What the software actually does when the steps to reproduce are followed. Good: Invalid dates (e.g. “54/01/07”) and dates in alternate formats (e.g. “07/01/54”) are accepted and no error message is generated. Bad: Instead it accepts any kind of date. |
+| Impact | An assessment of the impact of the defect on the software-under-test. It is important to include something beyond the simple “severity” to allow readers to understand the context of the defect report. Good: An invalid date will cause the month-end “Account Closure” report to crash the system and corrupt all affected customer records. Bad: This is serious dude! |
+| (Proposed solution) | An optional item of information testers can supply is a proposed solution. Testers often have unique and detailed information of the products they test and suggesting a solution can save designers and developers a lot of time. |
+| Priority | An optional field to allow development managers to assign relative priorities to defects of the same severity |
+| Root Cause | An optional field allowing developers to assign a root cause to the defect such as “inadequate requirements” or “coding error” |
+
+---
+
+#### Writing a Defect - Root Cause Analysis
