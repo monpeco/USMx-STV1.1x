@@ -34,3 +34,19 @@ So what makes a good defect report? Often defect reports do not have enough info
 ---
 
 #### Writing a Defect - Characteristics of a Good Defect Report
+
+* **Objective** – criticizing someone else’s work can be difficult. Care should be taken that defects are objective, non-judgmental and unemotional. e.g. don’t say “your program crashed” say “the program crashed” and don’t use words like “stupid” or “broken”.
+
+* **Specific** – one report should be logged per defect and only one defect per report.
+
+* **Concise** – each defect report should be simple and to-the-point. Defects should be reviewed and edited after being written to reduce unnecessary complexity.
+
+* **Reproducible** – the single biggest reason for developers rejecting defects is because they can’t reproduce them. As a minimum, a defect report must contain enough information to allow anyone to easily reproduce the issue if it can be reproduced at will. Timing issues may be hard to reproduce but in that case there should be other information that can help in determining where in the code the error may be
+
+* **Explicit** – defect reports should state information clearly or they should refer to a specific source where the information can be found. e.g. “click the button to continue” implies the reader knows which button to click, whereas “click the ‘Next’ button” explicitly states what they should do.
+
+* **Persuasive** –the pinnacle of good defect reporting is the ability to champion defects by presenting them in a way which makes developers want to fix them.
+
+---
+
+#### 
