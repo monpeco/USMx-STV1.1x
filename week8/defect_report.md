@@ -49,4 +49,14 @@ So what makes a good defect report? Often defect reports do not have enough info
 
 ---
 
+#### Writing a Defect - Isolation and Generalization
+
+Isolation is the process of examining the causes of a defect. While the exact root cause might not be determined by a tester it is important to try and separate the symptoms of the problem from the cause. Isolating a defect is generally done by reproducing it multiple times in different situations to get an understanding of how and when it occurs.
+
+Generalization on the other hand is the process of understanding the broader impact of a defect. Because developers reuse code elements throughout a program a defect present in one element of code can manifest itself in other areas. A defect that is discovered as a minor issue in one area of code might be a major issue in another area. Individuals logging defects should attempt to extrapolate where else an issue might occur so that a developer will consider the full context of the defect, not just a single isolated incident.
+
+A defect report that is written without isolating and generalizing it is a half reported defect.
+
+---
+
 #### 
